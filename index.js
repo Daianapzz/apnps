@@ -9,6 +9,10 @@ app.get('/mensagem',function(rec,res){
     res.send("Essa mensagem é automática")
 })
 
+app.get('/sobre',function(rec,res){
+    res.send("Essa página está sendo desenvolvida por Daiana")
+})
+
 app.listen(3000,function () {
     console.log("conexão inicializada")
 })
