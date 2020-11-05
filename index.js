@@ -13,6 +13,10 @@ app.get('/sobre',function(rec,res){
     res.send("Essa página está sendo desenvolvida por Daiana")
 })
 
+app.get('/layout',function(rec,res){
+    res.send("Esse é o novo layout")
+})
+
 app.listen(3000,function () {
     console.log("conexão inicializada")
 })
