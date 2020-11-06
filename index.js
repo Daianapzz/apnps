@@ -26,6 +26,14 @@ app.get('/usuarios',function(rec,res){
     ]})
 })
 
+app.get('/add',function(rec,res){
+    res.render('adiciona.ejs')
+})
+
+app.post('/add',function(rec,res){
+    console.log("Nome: "+rec.body.txtNome + " Email> "+rec.body.txtEmail)
+})
+
 app.listen(3000,function () {
     console.log("conexão inicializada")
 })
